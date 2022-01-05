@@ -67,7 +67,7 @@ def interpolate(config, key, globalVars, localVars):
 		pass
 	
 	try:
-		return eval(config.get(key), globalVars, localVars) # evaluate expressions
+		return eval(config.get(key).replace('\n',''), globalVars, localVars) # evaluate expressions
 	except:
 		pass
 	
