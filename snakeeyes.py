@@ -12,7 +12,7 @@ def readConfig(configPath, globalVars = globals(), localVars = locals()):
 	params = dict()
 	config = ConfigParser(inline_comment_prefixes=('#'),interpolation=ExtendedInterpolation())
 	config.optionxform = lambda option: option
-	config.read(configPath)
+	config.read_file(open(configPath))
 	for section in config:
 		params[section] = dict()
 		for key in config[section]:
