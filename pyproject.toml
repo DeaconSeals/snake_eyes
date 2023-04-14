@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "snake-eyes"
+version = "0.1.0"
+description = "Python configuration file parser for evolutionary algorithms"
+authors = ["Deacon Seals"]
+license = "Wrapper for the Python config parser to read an ini config file and return a dictionary of typed parameters. For documentation of Python configparser and ini use, see https://docs.python.org/3.8/library/configparser.html"
+readme = "README.md"
+packages = [{include = "snake_eyes"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
