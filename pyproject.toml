@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "snake-eyes"
+name = "snake-eyes-parser"
 version = "0.1.0"
 description = "Python configuration file parser for evolutionary algorithms"
 authors = ["Deacon Seals"]
