@@ -5,14 +5,14 @@ Wrapper for the Python config parser to read an ini config file and return a dic
 
 ini sections are stored as sub-dictionaries in the return dict. Filenames support arbitrary extensions (like .cfg). Parameter names are case-sensitive.
 
-The primary function you'll want is `readConfig()` which requires a valid filepath to your config file as the first parameter. You may also pass optional `globalVars` and `localVars` as optional second and third parameters, respectively, for use with expression evaluation. This enables the use of constants and imported/defined functions during the expression evaluation portion of parsing.
+The primary function you'll want is `read_config()` which requires a valid filepath to your config file as the first parameter. You may also pass optional `globalVars` and `localVars` as optional second and third parameters, respectively, for use with expression evaluation. This enables the use of constants and imported/defined functions during the expression evaluation portion of parsing.
 
 Example use:
 ```python
 # ...
-from snakeeyes import readConfig
+from snake_eyes import read_config
 # ...
-config = readConfig(myConfigPath, globals(), locals())
+config = read_config(myConfigPath, globals(), locals())
 ```
 
 Parameter type precedence is as follows:
